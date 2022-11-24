@@ -6,7 +6,7 @@ import animationData from "../lotties/Animation_Home.json";
 import SearchBar from "../components/SearchBar";
 import arrowfly from "../assets/arrow-fly.svg";
 
-export default function Home({ countries, setCountries, setSearch }) {
+export default function Home({ search, countries, setCountries, setSearch }) {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -46,6 +46,7 @@ export default function Home({ countries, setCountries, setSearch }) {
             countries={countries}
             setCountries={setCountries}
             setSearch={setSearch}
+            search={search}
           />
         </div>
       </div>

@@ -12,8 +12,9 @@ import Error404 from "./pages/Error404";
 import Randomizer from "./components/Randomizer";
 
 function App() {
-  const [countries, setCountries] = useState([]);
-  const [search, setSearch] = useState([]);
+  const [countries, setCountries] = useState();
+  const [search, setSearch] = useState();
+
   return (
     <div className="App w-screen bg-backgroundMain">
       <Navbar
