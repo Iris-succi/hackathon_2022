@@ -1,27 +1,16 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "../style/error404.css";
-import Lottie from "react-lottie";
-import animationData from "../lotties/error404.json";
+import { Link } from "react-router-dom";
+import error404image from "../images/error404image.jpg";
 
-/* Import 404 animation from lottie package */
 function Error404() {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
   return (
-    <div className="error404">
-      <Lottie options={defaultOptions} height={400} width={400} />
-      <NavLink to="/">
-        <span>Return to home page</span>
-      </NavLink>
+    <div>
+      <img className="error404" alt="error404" src={error404image} />
+      <p style={{ textAlign: "center" }}>
+        <Link to="/">Go to Home </Link>
+      </p>
     </div>
   );
 }
-
 export default Error404;
