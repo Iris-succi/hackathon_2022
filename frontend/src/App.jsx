@@ -6,7 +6,6 @@ import Navbar from "./components/Navbar";
 
 import Home from "./pages/Home";
 import "./style/App.css";
-import RecipeCards from "./components/RecipeCards";
 import About from "./pages/About";
 import Favorites from "./pages/Favorites";
 import Error404 from "./pages/Error404";
@@ -28,17 +27,6 @@ function App() {
           path="/"
           element={
             <Home
-              countries={countries}
-              setCountries={setCountries}
-              search={search}
-              setSearch={setSearch}
-            />
-          }
-        />
-        <Route
-          path="/recipecards"
-          element={
-            <RecipeCards
               countries={countries}
               setCountries={setCountries}
               search={search}
