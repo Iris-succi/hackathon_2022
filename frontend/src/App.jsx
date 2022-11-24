@@ -23,21 +23,35 @@ function App() {
         search={search}
         setSearch={setSearch}
       />
-      <Home
-        countries={countries}
-        setCountries={setCountries}
-        search={search}
-        setSearch={setSearch}
-      />
       <Routes>
+        <Route
+          path="/"
+          element={
+            <Home
+              countries={countries}
+              setCountries={setCountries}
+              search={search}
+              setSearch={setSearch}
+            />
+          }
+        />
+        <Route
+          path="/recipecards"
+          element={
+            <RecipeCards
+              countries={countries}
+              setCountries={setCountries}
+              search={search}
+              setSearch={setSearch}
+            />
+          }
+        />
         <Route path="*" element={<Error404 />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/recipecards" element={<RecipeCards />} />
+        {/* <Route path="/listrecipes" element={<Results />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/randomizer" element={<Randomizer />} />
       </Routes>
-      {/* <RecipeCards /> */}
     </div>
   );
 }
