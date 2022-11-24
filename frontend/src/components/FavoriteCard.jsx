@@ -1,14 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 
-function RecipeCardsResults({ recipe }) {
-  const [isFavorite, setIsFavorite] = React.useState(false);
+function FavoriteCard({ data }) {
+  const [isFavorite, setIsFavorite] = React.useState(true);
   function handleFavorite() {
     setIsFavorite(!isFavorite);
     const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
-    let recipes = favorites.find(
-      (element) => element.recipe === recipe.strMeal
-    );
+    let recipes = favorites.find((element) => element.recipe === data.strMeal);
 
     if (!isFavorite) {
       if (recipes === undefined) {
@@ -17,7 +15,15 @@ function RecipeCardsResults({ recipe }) {
         };
         favorites.push(recipes);
       }
-      recipes.recipefav.push(recipe);
+      recipes.recipefav.push(data);
+      localStorage.setItem("favorites", JSON.stringify(favorites));
+    } else {
+      if (recipes !== undefined) {
+        const recipesIndex = recipes.recipefav.findIndex(
+          (element) => element === data.id
+        );
+        recipes.recipefav.splice(recipesIndex, 1);
+      }
       localStorage.setItem("favorites", JSON.stringify(favorites));
     }
   }
@@ -26,12 +32,12 @@ function RecipeCardsResults({ recipe }) {
     <div className="w-64 mb-6 md:w-96 bg-white border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
       <img
         className="rounded-t-lg"
-        src={recipe.strMealThumb}
-        alt={recipe.strMeal}
+        src={data.recipefav[0].strMealThumb}
+        alt=""
       />
       <div className="p-5">
         <h5 className="mb-2 text-lg text-center md:text-xl tracking-tight text-gray-900 dark:text-white">
-          {recipe.strMeal}
+          {data.recipefav[0].strMeal}
         </h5>
       </div>
       {isFavorite ? (
@@ -65,4 +71,4 @@ function RecipeCardsResults({ recipe }) {
   );
 }
 
-export default RecipeCardsResults;
+export default FavoriteCard;
