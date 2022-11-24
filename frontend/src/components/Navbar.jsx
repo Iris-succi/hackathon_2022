@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <Router>
       <nav className="navbar  shadow">
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex ">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <a href="logo.png" className="flex items-center">
