@@ -33,7 +33,7 @@ function SearchBar({ countries, setCountries, setSearch }) {
 
       <div className="relative w-full">
         <input
-          className="block w-full p-4  pl-10 text-sm text-gray-900   rounded-lg  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700  searchbar"
+          className="block w-full p-4  pl-10 text-2xl text-gray-900   rounded-lg  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700  searchbar"
           required
           type="text"
           placeholder="Indicate type of food"
