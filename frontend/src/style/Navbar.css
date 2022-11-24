@@ -1,4 +1,10 @@
 .navbar {
   background-color: #2d4059;
   color: #e9e7cd;
+  position: absolute;
+  z-index: 20;
+}
+
+.burgerbutton {
+  color: #e9e7cd;
 }
