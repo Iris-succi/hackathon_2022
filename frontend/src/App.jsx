@@ -6,7 +6,6 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Results from "./pages/Results";
 import "./style/App.css";
-import RecipeCards from "./components/RecipeCards";
 import About from "./pages/About";
 import Favorites from "./pages/Favorites";
 import Error404 from "./pages/Error404";
@@ -16,7 +15,7 @@ function App() {
   const [countries, setCountries] = useState("");
   const [search, setSearch] = useState([]);
   return (
-    <div className="App w-screen">
+    <div className="App w-screen bg-backgroundMain">
       <Navbar
         countries={countries}
         setCountries={setCountries}
@@ -28,17 +27,6 @@ function App() {
           path="/"
           element={
             <Home
-              countries={countries}
-              setCountries={setCountries}
-              search={search}
-              setSearch={setSearch}
-            />
-          }
-        />
-        <Route
-          path="/recipecards"
-          element={
-            <RecipeCards
               countries={countries}
               setCountries={setCountries}
               search={search}

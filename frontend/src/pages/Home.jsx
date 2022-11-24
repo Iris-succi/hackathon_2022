@@ -17,30 +17,31 @@ export default function Home({ countries, setCountries, setSearch, search }) {
   };
 
   return (
-    <main className="w-screen h-screen bg-backgroundMain">
+    <main className=" h-100 bg-backgroundMain flex-col ">
       {/* Main content */}
-      <div className="md:flex justify-center items-center">
-        <h1 className="text-redtitle text-center text-3xl	font-bold ">
+      <div className="md:flex justify-around items-center my-5 ">
+        <h1 className="text-redtitle text-center text-3xl	md:text-5xl font-bold	 ">
           Lazy to cross the border? <br />
           Create your culinary journey!
         </h1>
-        <div className="block md:hidden w-100">
+        <div className="block md:hidden w-100 ">
           {" "}
           <img src={arrowfly} alt="" className="w-100" />
         </div>
-        <div>
-          <div>
-            <Lottie options={defaultOptions} height={300} width={300} />
-          </div>
+        <div className="block w-100 md:hidden">
+          <Lottie options={defaultOptions} height={300} width={300} />
+        </div>
+        <div className="hidden w-100 md:block">
+          <Lottie options={defaultOptions} height={300} width={400} />
         </div>
       </div>
       {/* Search bar and arrow flight */}
-      <div className="md:flex  justify-around items-center ">
-        <div className="hidden md:block w-1/2 ">
+      <div className="flex  justify-center items-center ">
+        <div className="hidden md:block  ">
           {" "}
           <img src={arrowfly} alt="" className="w-100 " />
         </div>
-        <div className="flex justify-center">
+        <div className=" w-5/6 md:w-3/6  p-5">
           <SearchBar
             countries={countries}
             setCountries={setCountries}

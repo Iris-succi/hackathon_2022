@@ -1,5 +1,5 @@
 import React from "react";
-import RecipeCards from "@components/RecipeCards";
+import RecipeCards from "../components/RecipeCards";
 
 function ListRecipesCards() {
   return (
