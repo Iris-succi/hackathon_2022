@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Light"; /*Can be any text*/
+  src: local("CafeFrancoise"),
+    url("../fonts/Cafe Francoise_D.otf") format("otf");
+}
+
+.App {
+  font-family: "Light";
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
