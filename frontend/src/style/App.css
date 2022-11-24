@@ -36,3 +36,16 @@ html {
     border-bottom: 4px dotted red;
   
  }
+
+ .img-modale{
+ height:40vh;
+ background-position: center;
+ background-image: cover;
+ max-width: 700px;
+ }
+
+
+ .rnded-modale{
+border-radius: 10px;
+box-shadow: #7c7c7c 0 0 10px 2px;
+ }
