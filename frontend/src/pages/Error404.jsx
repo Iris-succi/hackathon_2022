@@ -7,8 +7,8 @@ function Error404() {
   return (
     <div className="error404">
       <img className="image404" alt="error404" src={error404image} />
-      <p style={{ textAlign: "center" }}>
-        <Link to="/">Go to Home </Link>
+      <p className="paragraphe pt-8" style={{ textAlign: "center" }}>
+        <Link to="/">Go to Home !</Link>
       </p>
     </div>
   );

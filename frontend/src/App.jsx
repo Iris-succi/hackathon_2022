@@ -1,7 +1,6 @@
 // import RecipeCards from "@components/RecipeCards";
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-// import Error404 from "./pages/Error404";
 import Navbar from "./components/Navbar";
 
 import Home from "./pages/Home";
@@ -10,6 +9,8 @@ import About from "./pages/About";
 import Favorites from "./pages/Favorites";
 import Error404 from "./pages/Error404";
 import Randomizer from "./components/Randomizer";
+
+import "./fonts/Cafe Francoise_D.otf";
 
 function App() {
   const [countries, setCountries] = useState([]);
