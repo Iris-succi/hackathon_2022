@@ -20,7 +20,7 @@ export default function Home({ countries, setCountries, setSearch }) {
     <main className="w-screen h-screen bg-backgroundMain">
       {/* Main content */}
       <div className="md:flex justify-center items-center">
-        <h1 className="text-redtitle text-center text-3xl	font-bold	 ">
+        <h1 className="text-redtitle text-center text-3xl	font-bold ">
           Lazy to cross the border? <br />
           Create your culinary journey!
         </h1>
