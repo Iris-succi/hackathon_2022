@@ -1,8 +1,8 @@
 // import RecipeCards from "@components/RecipeCards";
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
-
 import Home from "./pages/Home";
+import Results from "./pages/Results";
 import "./style/App.css";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         search={search}
         setSearch={setSearch}
       />
-      {/* <RecipeCards /> */}
+      <Results />
     </div>
   );
 }

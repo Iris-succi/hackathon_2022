@@ -10,13 +10,14 @@ function SearchBar({ countries, setCountries, setSearch }) {
   }, []);
 
   const getSearchMealByCountry = () => {
-    fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${countries}`) // fetch when choice of food is made
-      .then((response2) => response2.json())
-      .then((result) => {
-        console.warn(result);
-        setSearch(result.meals);
-      })
-      .catch((err) => console.error(err));
+    if (countries)
+      fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${countries}`) // fetch when choice of food is made
+        .then((response2) => response2.json())
+        .then((result) => {
+          console.warn(result);
+          setSearch(result.meals);
+        })
+        .catch((err) => console.error(err));
   };
 
   const handleEnterSubmit = (e) => {
