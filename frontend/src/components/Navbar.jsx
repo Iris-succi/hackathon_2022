@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import "../style/Navbar.css";
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import SearchBar from "./SearchBar";
 import logo from "../images/logo.png";
 // import AllRoutes from "./AllRoutes";
 
-function Navbar() {
+function Navbar({ countries, setCountries, setSearch }) {
   const [navbar, setNavbar] = useState(false);
   return (
     <Router>
@@ -78,11 +80,10 @@ function Navbar() {
                 </li>
                 <li>
                   {" "}
-                  <input
-                    type="text"
-                    id="search-navbar"
-                    className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Search a country"
+                  <SearchBar
+                    countries={countries}
+                    setCountries={setCountries}
+                    setSearch={setSearch}
                   />
                 </li>
               </ul>
