@@ -10,6 +10,7 @@ import RecipeCards from "./components/RecipeCards";
 import About from "./pages/About";
 import Favorites from "./pages/Favorites";
 import Error404 from "./pages/Error404";
+import Randomizer from "./components/Randomizer";
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -34,6 +35,7 @@ function App() {
         <Route path="/recipecards" element={<RecipeCards />} />
         <Route path="/about" element={<About />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/randomizer" element={<Randomizer />} />
       </Routes>
       {/* <RecipeCards /> */}
     </div>
