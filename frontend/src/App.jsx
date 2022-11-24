@@ -13,7 +13,7 @@ import Error404 from "./pages/Error404";
 import Randomizer from "./components/Randomizer";
 
 function App() {
-  const [countries, setCountries] = useState([]);
+  const [countries, setCountries] = useState("");
   const [search, setSearch] = useState([]);
   return (
     <div className="App w-screen">
@@ -47,7 +47,10 @@ function App() {
           }
         />
         <Route path="*" element={<Error404 />} />
-        <Route path="/listrecipes" element={<Results search={search} />} />
+        <Route
+          path="/listrecipes"
+          element={<Results countries={countries} search={search} />}
+        />
         <Route path="/about" element={<About />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/randomizer" element={<Randomizer />} />

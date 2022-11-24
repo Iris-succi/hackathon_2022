@@ -1,10 +1,10 @@
-import RecipeCards from "../components/RecipeCards";
+import RecipeCardsResults from "../components/RecipeCardsResults";
 // import React from "react";
 
 function Results() {
   return (
     <div>
-      <RecipeCards />
+      <RecipeCardsResults />
     </div>
   );
 }
