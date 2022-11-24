@@ -9,6 +9,7 @@ import "./style/App.css";
 import RecipeCards from "./components/RecipeCards";
 import About from "./pages/About";
 import Favorites from "./pages/Favorites";
+import Error404 from "./pages/Error404";
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -28,7 +29,7 @@ function App() {
         setSearch={setSearch}
       />
       <Routes>
-        {/* <Route path="*" element={<Error404 theme={theme} />} /> */}
+        <Route path="*" element={<Error404 />} />
         <Route path="/" element={<Home />} />
         <Route path="/recipecards" element={<RecipeCards />} />
         <Route path="/about" element={<About />} />
