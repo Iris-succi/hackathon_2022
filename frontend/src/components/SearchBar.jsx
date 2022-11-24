@@ -20,16 +20,24 @@ function SearchBar({ countries, setCountries, setSearch, search }) {
       })
       .catch((err) => console.error(err));
   };
+
   useEffect(() => {
     getSearchMealByCountry();
   }, []);
+
   const handleEnterSubmit = (e) => {
     if (e.keyCode === 13) getSearchMealByCountry();
   };
   console.warn(search);
 
+  function getCountry(e) {
+    e.preventDefault();
+
+    setCountries(e.target.value);
+  }
+
   return (
-    <form>
+    <div>
       <label
         htmlFor="search-dropdown"
         className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -41,13 +49,17 @@ function SearchBar({ countries, setCountries, setSearch, search }) {
           required
           type="text"
           placeholder="Indicate type of food"
-          onChange={(event) => setCountries(event.target.value)}
+          onChange={getCountry}
           onBlur={getSearchMealByCountry} // indicate the function to active onClick
           // indicates if the key Enter was pressed
         />
         <button
           type="submit"
           className="absolute top-2 right-0 p-2.5 text-sm font-medium text-white bg-blue-700 rounded-r-lg  b hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          onClick={() => {
+            getSearchMealByCountry();
+            navigate("/listrecipes");
+          }}
         >
           <svg
             aria-hidden="true"
@@ -67,7 +79,7 @@ function SearchBar({ countries, setCountries, setSearch, search }) {
           <span className="sr-only">Search</span>
         </button>
       </div>
-    </form>
+    </div>
 
     /* Ancienne version a supprimer quand verification  *
         <div className="flex  rounded">
