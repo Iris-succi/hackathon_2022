@@ -1,6 +1,6 @@
 /* eslint-disable import/no-named-as-default-member */
 // import RecipeCards from "@components/RecipeCards";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -12,11 +12,22 @@ import Error404 from "./pages/Error404";
 import Randomizer from "./components/Randomizer";
 
 import "./fonts/Cafe Francoise_D.otf";
+import Loader from "./components/Loader";
 
 function App() {
+  const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false);
+    }, 3000);
+  }, []);
+
   const [countries, setCountries] = useState("");
   const [search, setSearch] = useState([]);
-  return (
+  return loader ? (
+    <Loader />
+  ) : (
     <div className="App w-screen bg-backgroundMain">
       <Navbar
         countries={countries}
