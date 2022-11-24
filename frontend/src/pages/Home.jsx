@@ -1,11 +1,12 @@
+/* eslint-disable react/prop-types */
+import React from "react";
 import Lottie from "react-lottie";
-/* import { useEffect, useState } from "react";
- */ import animationData from "../lotties/Animation_Home.json";
+/* import { useEffect, useState } from "react"; */
+import animationData from "../lotties/Animation_Home.json";
 import SearchBar from "../components/SearchBar";
-import Navbar from "../components/Navbar";
 import arrowfly from "../assets/arrow-fly.svg";
 
-export default function Home() {
+export default function Home({ countries, setCountries, setSearch }) {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -17,7 +18,6 @@ export default function Home() {
 
   return (
     <main className="w-screen h-screen bg-backgroundMain">
-      <Navbar />
       {/* Main content */}
       <div className="md:flex justify-center items-center">
         <h1 className="text-redtitle text-center text-3xl	font-bold	 ">
@@ -34,7 +34,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       {/* Search bar and arrow flight */}
       <div className="md:flex  justify-around items-center ">
         <div className="hidden md:block w-1/2 ">
@@ -42,7 +41,11 @@ export default function Home() {
           <img src={arrowfly} alt="" className="w-100 " />
         </div>
         <div className="flex justify-center">
-          <SearchBar />
+          <SearchBar
+            countries={countries}
+            setCountries={setCountries}
+            setSearch={setSearch}
+          />
         </div>
       </div>
     </main>
