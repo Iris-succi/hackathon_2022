@@ -15,7 +15,7 @@ function App() {
   const [countries, setCountries] = useState([]);
   const [search, setSearch] = useState([]);
   return (
-    <div className="App w-screen">
+    <div className="App w-screen bg-backgroundMain">
       <Navbar
         countries={countries}
         setCountries={setCountries}
