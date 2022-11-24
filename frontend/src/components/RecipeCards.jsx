@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import Modal from "./Modale";
 // import { Link } from "react-router-dom";
 
 function RecipeCards({ randomizer }) {
+  const [showModal, setShowModal] = React.useState(false);
   return (
     <div className="w-64 mb-6 md:w-96 bg-white border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
       <img className="rounded-t-lg" src={randomizer[0].strMealThumb} alt="" />
@@ -12,6 +14,11 @@ function RecipeCards({ randomizer }) {
           {randomizer[0].strMeal}
         </h5>
         {/* </Link> */}
+        <Modal
+          showModal={showModal}
+          setShowModal={setShowModal}
+          randomizer={randomizer}
+        />
       </div>
     </div>
   );

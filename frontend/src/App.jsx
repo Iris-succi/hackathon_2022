@@ -1,4 +1,5 @@
 // import RecipeCards from "@components/RecipeCards";
+import Randomizer from "@components/Randomizer";
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 
@@ -22,6 +23,7 @@ function App() {
         search={search}
         setSearch={setSearch}
       />
+      <Randomizer />
       {/* <RecipeCards /> */}
     </div>
   );
