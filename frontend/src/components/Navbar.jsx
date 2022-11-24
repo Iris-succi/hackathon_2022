@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import "../style/Navbar.css";
 import { Link } from "react-router-dom";
-import SearchBar from "./SearchBar";
 import logo from "../images/logo.png";
 // import AllRoutes from "./AllRoutes";
 
@@ -78,7 +77,7 @@ function Navbar() {
                 <Link to="/favorites">Favorites</Link>
               </li>
               <li className="flex justify-center">
-                {" "}
+                {/*  another search bar */}{" "}
                 <form className="flex items-center">
                   <label htmlFor="simple-search" className="sr-only">
                     Search
