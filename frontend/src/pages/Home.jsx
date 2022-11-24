@@ -30,7 +30,7 @@ export default function Home() {
         </div>
         <div>
           <div>
-            <Lottie options={defaultOptions} height={400} width={400} />
+            <Lottie options={defaultOptions} height={300} width={300} />
           </div>
         </div>
       </div>
@@ -41,7 +41,9 @@ export default function Home() {
           {" "}
           <img src={arrowfly} alt="" className="w-100 " />
         </div>
-        <SearchBar />
+        <div className="flex justify-center">
+          <SearchBar />
+        </div>
       </div>
     </main>
   );
