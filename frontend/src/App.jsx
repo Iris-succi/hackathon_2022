@@ -9,6 +9,8 @@ import "./style/App.css";
 import RecipeCards from "./components/RecipeCards";
 import About from "./pages/About";
 import Favorites from "./pages/Favorites";
+import Error404 from "./pages/Error404";
+import Randomizer from "./components/Randomizer";
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -22,7 +24,6 @@ function App() {
         setSearch={setSearch}
       />
       <Routes>
-        {/* <Route path="*" element={<Error404 theme={theme} />} /> */}
         <Route
           path="/"
           element={
@@ -45,10 +46,12 @@ function App() {
             />
           }
         />
+        <Route path="*" element={<Error404 />} />
+        {/* <Route path="/listrecipes" element={<Results />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/randomizer" element={<Randomizer />} />
       </Routes>
-      {/* <RecipeCards /> */}
     </div>
   );
 }

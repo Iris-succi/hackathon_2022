@@ -77,6 +77,9 @@ function Navbar({ countries, setCountries, setSearch }) {
               <li className="text-gray-600 hover:text-blue-600">
                 <Link to="/favorites">Favorites</Link>
               </li>
+              <li className="text-gray-600 hover:text-blue-600">
+                <Link to="/randomizer">Randomizer</Link>
+              </li>
               <li>
                 {" "}
                 <SearchBar
