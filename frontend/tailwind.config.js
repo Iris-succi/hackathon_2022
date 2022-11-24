@@ -9,6 +9,6 @@ module.exports = {
       bluetitle: "#2D4059",
       extend: {},
     },
-    plugins: [],
   },
+  plugins: [],
 };
