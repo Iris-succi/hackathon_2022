@@ -20,12 +20,12 @@ export default function Randomizer() {
   return randomizer ? (
     <div className="flex justify-center m-50 text-center">
       <div className="flex-col mt-6">
-        <h3 className="">If you don't have a recipe idea?</h3>
+        <h3 className="">You have no idea for your meal ?</h3>
         <button
           className="bg-bluetitle text-backgroundMain font-bold py-2 px-4 mt-6 mb-6 rounded"
           onClick={getRandom}
         >
-          Randomizer
+          Click here !
         </button>
         <RecipeCards randomizer={randomizer} />
       </div>
