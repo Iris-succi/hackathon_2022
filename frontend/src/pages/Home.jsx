@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default-member */
 /* eslint-disable react/prop-types */
 import React from "react";
 import Lottie from "react-lottie";
@@ -6,7 +7,7 @@ import animationData from "../lotties/Animation_Home.json";
 import SearchBar from "../components/SearchBar";
 import arrowfly from "../assets/arrow-fly.svg";
 
-export default function Home({ search, countries, setCountries, setSearch }) {
+export default function Home({ countries, setCountries, setSearch, search }) {
   const defaultOptions = {
     loop: true,
     autoplay: true,

@@ -12,11 +12,10 @@ body {
 }
 
 html {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
-.searchbar{
+.searchbar {
   background-color: #2d4059;
-  box-shadow: #2d4059 0px 0px 3px 0px
-  ;
+  box-shadow: #2d4059 0px 0px 3px 0px;
 }
