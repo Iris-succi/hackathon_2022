@@ -78,6 +78,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/randomizer" element={<Randomizer />} />
+        <Route path="/restos" element={<Resto />} />
         <Route path="/myingredient" element={<MyIngredient />} />
         <Route
           path="/search/:searchValue"
