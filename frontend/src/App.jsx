@@ -1,6 +1,5 @@
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable import/no-named-as-default-member */
-// import RecipeCards from "@components/RecipeCards";
 import React, { useEffect, useState } from "react";
 import "./style/App.css";
 import { Routes, Route } from "react-router-dom";
@@ -12,12 +11,10 @@ import Favorites from "./pages/Favorites";
 import Error404 from "./pages/Error404";
 import Randomizer from "./components/Randomizer";
 import Loader from "./components/Loader";
-/* eslint-disable import/no-named-as-default */
-/* eslint-disable import/no-named-as-default-member */
-// import RecipeCards from "@components/RecipeCards";
 
 import MyIngredient from "./pages/MyIngredient";
 import "./fonts/Cafe Francoise_D.otf";
+import Resto from "./components/Resto";
 
 function App() {
   const [loader, setLoader] = useState(true);
@@ -61,6 +58,7 @@ function App() {
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/randomizer" element={<Randomizer />} />
         <Route path="/myingredient" element={<MyIngredient />} />
+        <Route path="/restos" element={<Resto />} />
       </Routes>
     </div>
   );

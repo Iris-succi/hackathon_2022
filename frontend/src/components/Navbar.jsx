@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "../style/Navbar.css";
 import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
-// import AllRoutes from "./AllRoutes";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -81,6 +80,9 @@ function Navbar() {
               </li>
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
                 <Link to="/myingredient">Last Ingredient</Link>
+              </li>
+              <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
+                <Link to="/restos">Restos of all countries</Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
                 <Link to="/about">About Us</Link>
