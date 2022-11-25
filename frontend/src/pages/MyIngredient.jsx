@@ -41,7 +41,7 @@ export default function MyIngredient() {
             <svg
               aria-hidden="true"
               className="w-5 h-5"
-              fill="#2D4059"
+              fill="#C40000"
               stroke="#F6F6F6"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"

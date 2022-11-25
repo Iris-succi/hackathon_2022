@@ -5,10 +5,14 @@ module.exports = {
     colors: {
       transparent: "transparent",
       backgroundMain: "#F6F6F6",
-      redtitle: "#8C0712",
+      redtitle: "#C40000",
       bluetitle: "#2D4059",
-      extend: {},
+      extend: {
+        fontFamily: {
+          CafeFrancoise: ["Cafe Francoise_D"],
+        },
+      },
     },
+    plugins: [],
   },
-  plugins: [],
 };

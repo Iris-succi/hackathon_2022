@@ -21,8 +21,8 @@ export default function Randomizer() {
     <div className="flex h-screen justify-center m-50 text-center">
       <div className="flex-col mt-6  ">
         <h3 className="text-2xl md:text-5xl py-5 text-randomize">
-          You have no idea
-          <br /> for your meal ?
+          If you have no idea
+          <br /> for your meal today
         </h3>
         <button
           className="bg-bluetitle text-backgroundMain font-bold py-2 px-4 mt-6 mb-9 rounded "
@@ -34,7 +34,7 @@ export default function Randomizer() {
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
-              fill="#A6122D"
+              fill="#C40000"
               className="bi bi-airplane-fill inline-block ml-2 transform rotate-45"
               viewBox="0 0 16 16"
             >

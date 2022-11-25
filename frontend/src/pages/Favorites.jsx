@@ -23,7 +23,7 @@ function Favorites() {
             xmlns="http://www.w3.org/2000/svg"
             width="25"
             height="25"
-            fill="#A6122D"
+            fill="#C40000"
             className="bi bi-airplane-fill inline-block ml-2 transform rotate-45"
             viewBox="0 0 16 16"
           >

@@ -72,9 +72,6 @@ function Navbar() {
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
                 <Link to="/">Home</Link>
               </li>
-              <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
-                <Link to="/recipecards">Work in progress</Link>
-              </li>
 
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
                 <Link to="/favorites">Favorites</Link>
