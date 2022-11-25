@@ -1,0 +1,9 @@
+.picturesResto {
+  height: 10%;
+}
+
+.restos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

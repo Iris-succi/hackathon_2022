@@ -2,6 +2,7 @@ import React from "react";
 import "../style/About.css";
 import AboutUs from "../images/AboutUs.jpg";
 import AboutUs2 from "../images/AboutUs2.jpg";
+import AboutUs3 from "../images/AboutUs3.jpg";
 
 function About() {
   return (
@@ -64,7 +65,7 @@ function About() {
           </div>
         </div>
         <div className="cards max-w-sm bg-white  border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-          <img className="rounded-t-lg" src={AboutUs} alt="aboutus" />
+          <img className="rounded-t-lg" src={AboutUs3} alt="aboutus" />
           <div className="p-5">
             <h5 className="mb-2 text-2xl text-center tracking-tight text-gray-900 dark:text-white">
               Grand finish en mode dechets.{" "}
