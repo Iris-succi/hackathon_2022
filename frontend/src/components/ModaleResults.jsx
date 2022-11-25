@@ -45,22 +45,23 @@ export default function Modal({ showModal, setShowModal, recipeDetails }) {
                   </button>
                 </div>
                 <div className="relative p-6 flex-auto text-backgroundMain">
-                  <img src={recipeDetails[0].strMealThumb} alt="recipe" />
+                  <img
+                    className="object-cover h-48 w-full"
+                    src={recipeDetails[0].strMealThumb}
+                    alt="recipe"
+                  />
                   <div className="mt-5">
                     Country : {recipeDetails[0].strArea}
                   </div>
                   <div className="mt-5">
                     Categorie : {recipeDetails[0].strCategory}
                   </div>
-                  <div className="mt-5">
-                    Ingredient :{" "}
-                    {ingredients?.map((ingredient) =>
-                      ingredient ? <p>-{ingredient}</p> : null
-                    )}
-                  </div>
-                  <br />
+                  Ingredient :{" "}
+                  {ingredients?.map((ingredient) =>
+                    ingredient ? <p>-{ingredient}</p> : null
+                  )}
+                  <p>Lien Youtube vers la recette en vidéo :</p>
                   <a href={recipeDetails[0].strYoutube}>
-                    <p>Link to the video of recipe:</p>
                     <img src={youtube} alt="" className="w-12" />
                   </a>
                 </div>
