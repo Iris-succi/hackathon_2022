@@ -3,3 +3,13 @@
   justify-content: center;
   color: #8c0712;
 }
+
+@media screen and (max-width: 600px) {
+  .animation {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+}

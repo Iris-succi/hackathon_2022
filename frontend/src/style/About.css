@@ -1,11 +1,22 @@
-/* .totalUs {
-    display: flex;
-    flex-direction: column;
+.images {
+  display: flex;
+  justify-content: center;
 }
 
-.aboutus {
+@media screen and (max-width: 600px) {
+  .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    position: relative;
-    height: 60vh;
-    width: 60vh;
-} */
+  }
+  .cards {
+    margin-bottom: 2em;
+  }
+  .paragraphes {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+}
