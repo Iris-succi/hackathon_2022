@@ -9,7 +9,7 @@ function Favorites() {
   // const [displayCardHotels, setDisplayCardHotels] = React.useState();
   /* use effect for get the data in the localstorage */
   React.useEffect(() => {
-    const cardData = localStorage.getItem("favorite");
+    const cardData = localStorage.getItem("favorites");
     setDisplayCardTrip(JSON.parse(cardData));
   }, []);
   const datas = JSON.parse(localStorage.getItem("favorites"));
@@ -31,7 +31,7 @@ function Favorites() {
           </svg>
         </h1>
         <div className=" md:flex md:align-center md:justify-center m-5  gap-10 md:flex-row md:flex-wrap">
-          {datas.map((data) => (
+          {datas?.map((data) => (
             <FavoriteCard key={data.id} data={data} />
           ))}
         </div>

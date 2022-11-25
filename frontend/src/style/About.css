@@ -1,13 +1,21 @@
-.loaderText {
+.images {
   display: flex;
   justify-content: center;
-  color: #8c0712;
+  
 }
 
 @media screen and (max-width: 600px) {
-  .animation {
+  .images {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+  }
+  .cards {
+    margin-bottom: 2em;
+  }
+  .paragraphes {
+    margin-top: 0;
   }
 }
 
