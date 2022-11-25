@@ -35,7 +35,7 @@ function Navbar({ searchValue, setSearchValue, getResult }) {
             <div className="md:hidden">
               <button
                 type="button"
-                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border "
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
@@ -82,23 +82,35 @@ function Navbar({ searchValue, setSearchValue, getResult }) {
             {/* border-box bug */}
             <ul className="items-center p-3 justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
-                <Link to="/">Home</Link>
+                <Link onClick={() => setNavbar(!navbar)} to="/">
+                  Home
+                </Link>
               </li>
 
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
-                <Link to="/favorites">Favorites</Link>
+                <Link onClick={() => setNavbar(!navbar)} to="/favorites">
+                  Favorites
+                </Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
-                <Link to="/randomizer">Randomizer</Link>
+                <Link onClick={() => setNavbar(!navbar)} to="/randomizer">
+                  Randomizer
+                </Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
-                <Link to="/myingredient">Last Ingredient</Link>
+                <Link onClick={() => setNavbar(!navbar)} to="/myingredient">
+                  Last Ingredient
+                </Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
-                <Link to="/restos">Restos of all countries</Link>
+                <Link onClick={() => setNavbar(!navbar)} to="/restos">
+                  Restos of all countries
+                </Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
-                <Link to="/about">About Us</Link>
+                <Link onClick={() => setNavbar(!navbar)} to="/about">
+                  About Us
+                </Link>
               </li>
               <li className="flex justify-center">
                 {/*  another search bar */}{" "}
