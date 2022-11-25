@@ -43,7 +43,7 @@ function SearchBar({ countries, setCountries, setSearch, search }) {
         className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
       />
 
-      <div className="relative w-full">
+      <div className="relative w-full flex">
         <input
           className="block w-full p-4  pl-10 text-2xl text-gray-900   rounded-lg  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700  searchbar"
           required
@@ -63,10 +63,10 @@ function SearchBar({ countries, setCountries, setSearch, search }) {
         >
           <svg
             aria-hidden="true"
-            className="w-5 h-5"
+            className="w-5 h-5 my-1"
             fill="none"
             stroke="#F6F6F6"
-            viewBox="0 0 24 24"
+            viewBox="0 0 20 24"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
