@@ -7,7 +7,7 @@ function Results({ search, countries }) {
     <div className="flex justify-center align-center">
       <div className="flex-col ">
         <h1 className="text-center text-3xl mt-5 py-3  mb-5 text-randomize">
-          {countries} food !{" "}
+          Layover in {countries} food !{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"

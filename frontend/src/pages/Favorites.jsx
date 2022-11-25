@@ -18,7 +18,7 @@ function Favorites() {
     <div className="flex justify-center align-center">
       <div className="flex flex-col  justify-center text-center  ">
         <h1 className="text-3xl mt-5 mb-5 py-3 text-randomize">
-          My favorites recipes{" "}
+          My food trip{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"
