@@ -21,8 +21,8 @@ export default function Home({ countries, setCountries, setSearch, search }) {
     <main className=" h-96 my-8 bg-backgroundMain border border-transparent flex-col ">
       {/* Main content */}
       <div className="md:flex justify-around items-center border border-transparent my-5  my-8">
-        <h1 className="text-redtitle text-center text-3xl	md:text-5xl font-bold	 ">
-          Lazy to cross the border? <br />
+        <h1 className="text-[#C40000] text-center text-3xl	md:text-5xl font-bold	 ">
+          Lazy to cross the border ! <br />
           Create your culinary journey !
         </h1>
         <div className="block md:hidden w-100 ">

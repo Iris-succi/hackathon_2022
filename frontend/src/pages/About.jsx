@@ -12,7 +12,7 @@ function About() {
           xmlns="http://www.w3.org/2000/svg"
           width="25"
           height="25"
-          fill="#A6122D"
+          fill="#C40000"
           className="bi bi-airplane-fill inline-block ml-2 transform rotate-45"
           viewBox="0 0 16 16"
         >
@@ -36,7 +36,7 @@ function About() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
                 height="25"
-                fill="#A6122D"
+                fill="#C40000"
                 className="bi bi-airplane-fill inline-block ml-2 transform rotate-45"
                 viewBox="0 0 16 16"
               >
@@ -54,7 +54,7 @@ function About() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
                 height="25"
-                fill="#A6122D"
+                fill="#C40000"
                 className="bi bi-airplane-fill inline-block ml-2 transform rotate-90"
                 viewBox="0 0 16 16"
               >
@@ -67,12 +67,12 @@ function About() {
           <img className="rounded-t-lg" src={AboutUs} alt="aboutus" />
           <div className="p-5">
             <h5 className="mb-2 text-2xl text-center tracking-tight text-gray-900 dark:text-white">
-              Grand finish en mode déchets.{" "}
+              Grand finish en mode dechets.{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
                 height="25"
-                fill="#A6122D"
+                fill="#C40000"
                 className="bi bi-airplane-fill inline-block ml-2 transform rotate-180"
                 viewBox="0 0 16 16"
               >
