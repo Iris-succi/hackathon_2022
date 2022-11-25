@@ -1,6 +1,6 @@
-/* eslint-disable react/button-has-type */
 import React, { useEffect, useState } from "react";
 import RecipeCards from "./RecipeCards";
+/* eslint-disable react/button-has-type */
 
 export default function Randomizer() {
   const [randomizer, setRandomizer] = useState();
@@ -10,7 +10,6 @@ export default function Randomizer() {
       .then((response) => response.json())
       .then((response) => setRandomizer(response.meals))
       .catch((err) => console.error(err));
-    console.warn(randomizer);
   };
 
   useEffect(() => {

@@ -1,6 +1,7 @@
 /* eslint-disable no-lone-blocks */
 import React, { useEffect, useState } from "react";
 import IngredientCard from "../components/IngredientCard";
+import loupe from "../images/loupe.svg";
 
 export default function MyIngredient() {
   const [ingredient, setIngredient] = useState();
@@ -40,10 +41,9 @@ export default function MyIngredient() {
           >
             <svg
               aria-hidden="true"
-              className="w-5 h-5"
-              fill="#C40000"
-              stroke="#F6F6F6"
-              viewBox="0 0 24 24"
+              className="w-5 h-5 text-gray-500 dark:text-gray-400"
+              fill={loupe}
+              viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
