@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       transparent: "transparent",
       backgroundMain: "#F6F6F6",
+      backgroundMainModalOpen: "#2D4059",
       redtitle: "#C40000",
       bluetitle: "#2D4059",
       extend: {
