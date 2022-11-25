@@ -13,7 +13,11 @@ function Navbar() {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="/" className="flex items-center">
-              <img src={logo} className=" z-20 relative w-10 " alt="Logo" />
+              <img
+                src={logo}
+                className=" z-20 relative w-10 grayscale "
+                alt="Logo"
+              />
               <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white" />
             </a>
             <div className="md:hidden">
@@ -57,7 +61,7 @@ function Navbar() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center  rounded shadow-lg pb-5 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`flex-1 justify-self-center   pb-5 mt-8 md:block md:pb-0 md:mt-0 ${
               navbar
                 ? "block absolute top-7 left-0 bg-[#2d4059] w-screen z-10"
                 : "hidden"
