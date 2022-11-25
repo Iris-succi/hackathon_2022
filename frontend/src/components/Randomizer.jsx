@@ -10,7 +10,6 @@ export default function Randomizer() {
       .then((response) => response.json())
       .then((response) => setRandomizer(response.meals))
       .catch((err) => console.error(err));
-    console.warn(randomizer);
   };
 
   useEffect(() => {
