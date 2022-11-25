@@ -1,7 +1,7 @@
 .loaderText {
   display: flex;
   justify-content: center;
-  color: #C40000;
+  color: #c40000;
 }
 
 @media screen and (max-width: 600px) {

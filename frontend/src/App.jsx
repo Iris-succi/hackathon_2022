@@ -1,9 +1,11 @@
+/* eslint-disable */
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable import/no-named-as-default-member */
 // import RecipeCards from "@components/RecipeCards";
 import React, { useEffect, useState } from "react";
 import "./style/App.css";
 import { Routes, Route } from "react-router-dom";
+import SearchValueResults from "@components/SearchValueResults";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Results from "./pages/Results";
@@ -28,6 +30,22 @@ function App() {
     }, 3000);
   }, []);
 
+  const [searchValue, setSearchValue] = useState("");
+  const [result, setResult] = useState([]);
+
+  const getResult = () => {
+    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchValue}`)
+      .then((response) => response.json())
+      .then((response) => {
+        setResult(response.meals);
+      })
+      .catch((err) => console.error(err));
+  };
+
+  useEffect(() => {
+    getResult();
+  }, []);
+
   const [countries, setCountries] = useState("");
   const [search, setSearch] = useState([]);
   return loader ? (
@@ -39,6 +57,9 @@ function App() {
         setCountries={setCountries}
         search={search}
         setSearch={setSearch}
+        searchValue={searchValue}
+        setSearchValue={setSearchValue}
+        getResult={getResult}
       />
       <Routes>
         <Route
@@ -61,6 +82,16 @@ function App() {
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/randomizer" element={<Randomizer />} />
         <Route path="/myingredient" element={<MyIngredient />} />
+        <Route
+          path="/search/:searchValue"
+          element={
+            <SearchValueResults
+              /* searchValue={searchValue}
+              getResult={getResult} */
+              result={result}
+            />
+          }
+        />
       </Routes>
     </div>
   );
