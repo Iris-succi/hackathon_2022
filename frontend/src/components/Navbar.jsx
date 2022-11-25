@@ -67,6 +67,7 @@ function Navbar() {
                 : "hidden"
             }`}
           >
+            {/* border-box bug */}
             <ul className="items-center p-3 justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
                 <Link to="/">Home</Link>
