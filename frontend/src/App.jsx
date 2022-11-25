@@ -1,3 +1,6 @@
+/* eslint-disable import/no-named-as-default */
+/* eslint-disable import/no-named-as-default-member */
+// import RecipeCards from "@components/RecipeCards";
 import React, { useEffect, useState } from "react";
 import "./style/App.css";
 import { Routes, Route } from "react-router-dom";
@@ -13,6 +16,7 @@ import Loader from "./components/Loader";
 /* eslint-disable import/no-named-as-default-member */
 // import RecipeCards from "@components/RecipeCards";
 
+import MyIngredient from "./pages/MyIngredient";
 import "./fonts/Cafe Francoise_D.otf";
 
 function App() {
@@ -56,6 +60,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/randomizer" element={<Randomizer />} />
+        <Route path="/myingredient" element={<MyIngredient />} />
       </Routes>
     </div>
   );

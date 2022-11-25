@@ -1,6 +1,6 @@
-/* eslint-disable react/button-has-type */
 import React, { useEffect, useState } from "react";
 import RecipeCards from "./RecipeCards";
+/* eslint-disable react/button-has-type */
 
 export default function Randomizer() {
   const [randomizer, setRandomizer] = useState();
