@@ -37,10 +37,10 @@ export default function Home({ countries, setCountries, setSearch, search }) {
         </div>
       </div>
       {/* Search bar and arrow flight */}
-      <div className="flex  justify-center items-center ">
+      <div className="flex flex-col-reverse  justify-center items-center ">
         <div className="hidden md:block  ">
           {" "}
-          <img src={arrowfly} alt="" className="w-100 " />
+          <img src={arrowfly} alt="" className="w-100  h-60" />
         </div>
         <div className=" w-5/6 md:w-3/6  p-5">
           <SearchBar
