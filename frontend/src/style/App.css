@@ -28,9 +28,8 @@ html {
 .searchbar {
   background-color: #2d4059;
   box-shadow: #2d4059 0px 0px 3px 0px;
-  color:white;
+  color: white;
 }
-
 
 .text-randomize {
   text-decoration: none;
@@ -38,18 +37,17 @@ html {
 }
 
 .txt-perso-search {
-  color:#2d4059
+  color: #2d4059;
 }
 
- .img-modale{
- height:40vh;
- background-position: center;
- background-image: cover;
- max-width: 700px;
- }
+.img-modale {
+  height: 40vh;
+  background-position: center;
+  background-image: cover;
+  max-width: 700px;
+}
 
-
- .rnded-modale{
-border-radius: 10px;
-box-shadow: #7c7c7c 0 0 10px 2px;
- }
+.rnded-modale {
+  border-radius: 10px;
+  box-shadow: #7c7c7c 0 0 10px 2px;
+}
