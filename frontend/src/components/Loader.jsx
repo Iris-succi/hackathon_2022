@@ -13,11 +13,13 @@ function Loader() {
     },
   };
   return (
-    <div className="">
-      <Lottie options={defaultOptions} height={700} width={700} />
-      <NavLink to="/">
-        <span className="loaderText text-5xl font-bold">Wait for it...</span>
-      </NavLink>
+    <div className="vw-screen">
+      <div className="d-flex justify-center w-100">
+        <Lottie options={defaultOptions} height={400} width={400} />
+        <NavLink to="/">
+          <span className="loaderText text-5xl font-bold">Wait for it...</span>
+        </NavLink>
+      </div>
     </div>
   );
 }
