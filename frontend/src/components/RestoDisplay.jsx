@@ -7,7 +7,7 @@ function RestoDisplay({ country, name, adress, number, pictures }) {
     <div className="border flex justify-center align-center text-center">
       <div className="restos">
         <div className="picturesResto">
-          <img alt="pictures" src={pictures} />
+          <img src={pictures} alt="pictures" />
         </div>
         <h1 className="restoDisplay">
           Type of food : {country} Name : {name} Adress : {adress} Number :
