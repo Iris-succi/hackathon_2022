@@ -10,7 +10,7 @@ import About from "./pages/About";
 import Favorites from "./pages/Favorites";
 import Error404 from "./pages/Error404";
 import Randomizer from "./components/Randomizer";
-
+import MyIngredient from "./pages/MyIngredient";
 import "./fonts/Cafe Francoise_D.otf";
 import Loader from "./components/Loader";
 
@@ -55,6 +55,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/randomizer" element={<Randomizer />} />
+        <Route path="/myingredient" element={<MyIngredient />} />
       </Routes>
     </div>
   );
