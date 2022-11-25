@@ -82,33 +82,33 @@ function Navbar({ searchValue, setSearchValue, getResult }) {
             {/* border-box bug */}
             <ul className="items-center p-3 justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
-                <Link onClick={() => setNavbar(!navbar)} to="/">
+                <Link to="/">
                   Home
                 </Link>
               </li>
 
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
-                <Link onClick={() => setNavbar(!navbar)} to="/favorites">
+                <Link to="/favorites">
                   Favorites
                 </Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
-                <Link onClick={() => setNavbar(!navbar)} to="/randomizer">
+                <Link to="/randomizer">
                   Randomizer
                 </Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
-                <Link onClick={() => setNavbar(!navbar)} to="/myingredient">
+                <Link to="/myingredient">
                   Last Ingredient
                 </Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
-                <Link onClick={() => setNavbar(!navbar)} to="/restos">
+                <Link  to="/restos">
                   Restos of all countries
                 </Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
-                <Link onClick={() => setNavbar(!navbar)} to="/about">
+                <Link to="/about">
                   About Us
                 </Link>
               </li>
