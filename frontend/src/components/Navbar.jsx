@@ -78,6 +78,9 @@ function Navbar() {
                 <Link to="/randomizer">Randomizer</Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
+                <Link to="/myingredient">Last Ingredient</Link>
+              </li>
+              <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
                 <Link to="/about">About Us</Link>
               </li>
               <li className="flex justify-center">
