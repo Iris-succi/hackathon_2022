@@ -28,9 +28,15 @@ html {
 .searchbar {
   background-color: #2d4059;
   box-shadow: #2d4059 0px 0px 3px 0px;
+  color:white;
 }
+
 
 .text-randomize {
   text-decoration: none;
   border-bottom: 4px dotted red;
+}
+
+.txt-perso-search {
+  color:#2d4059
 }

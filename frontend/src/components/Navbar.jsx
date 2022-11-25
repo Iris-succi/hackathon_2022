@@ -12,7 +12,7 @@ function Navbar() {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="logo.png" className="flex items-center">
+            <a href="/" className="flex items-center">
               <img src={logo} className=" z-20 relative w-10 " alt="Logo" />
               <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white" />
             </a>
@@ -57,27 +57,28 @@ function Navbar() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`flex-1 justify-self-center  rounded shadow-lg pb-5 mt-8 md:block md:pb-0 md:mt-0 ${
               navbar
                 ? "block absolute top-7 left-0 bg-[#2d4059] w-screen z-10"
                 : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            <ul className="items-center p-3 justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
                 <Link to="/">Home</Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
-                <Link to="/recipecards">Cards Recipes</Link>
+                <Link to="/recipecards">Work in progress</Link>
               </li>
-              <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
-                <Link to="/about">About Us</Link>
-              </li>
+
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
                 <Link to="/favorites">Favorites</Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
                 <Link to="/randomizer">Randomizer</Link>
+              </li>
+              <li className="text-gray-600 hover:text-blue-600 text-right pr-3">
+                <Link to="/about">About Us</Link>
               </li>
               <li className="flex justify-center">
                 {/*  another search bar */}{" "}
@@ -93,7 +94,7 @@ function Navbar() {
                       <svg
                         aria-hidden="true"
                         className="w-5 h-5 text-gray-500 dark:text-gray-400"
-                        fill="currentColor"
+                        fill="#2d4059"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -107,7 +108,7 @@ function Navbar() {
                     <input
                       type="text"
                       id="simple-search"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      className="bg-gray-50 border border-gray-300  text-sm rounded-lg  block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white   txt-perso-search"
                       placeholder="Search recipe"
                       required
                     />
