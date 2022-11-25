@@ -31,7 +31,7 @@ function About() {
           <img className="rounded-t-lg" src={AboutUs} alt="aboutus" />
           <div className="p-5">
             <h5 className="mb-2 text-2xl text-center tracking-tight text-gray-900 dark:text-white">
-              On est nem'barqué dans l'aventure !{" "}
+              On nem'barque dans l'aventure !{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
