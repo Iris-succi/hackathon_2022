@@ -41,7 +41,7 @@ export default function Randomizer() {
             </svg>
           </span>
         </button>
-        <RecipeCards randomizer={randomizer} />
+        <RecipeCards key={randomizer} randomizer={randomizer} />
       </div>
     </div>
   ) : null;
