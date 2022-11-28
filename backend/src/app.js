@@ -1,8 +1,5 @@
 const express = require("express");
-const fs = require("fs");
-const path = require("path");
 const cors = require("cors");
-const router = require("./router");
 
 const app = express();
 
@@ -16,30 +13,23 @@ app.use(
 
 app.use(express.json());
 
-// Serve the public folder for public resources
-app.use(express.static(path.join(__dirname, "../public")));
+// call our api
+const welcome = (req, res) => {
+  res.send("Welcome to our favourite food site !");
+};
 
-// Serve REACT APP
-app.use(express.static(path.join(__dirname, "..", "..", "frontend", "dist")));
+app.get("/", welcome);
 
-// API routes
-app.use(router);
+const foodHandlers = require("./foodHandlers");
 
-// Redirect all requests to the REACT app
-const reactIndexFile = path.join(
-  __dirname,
-  "..",
-  "..",
-  "frontend",
-  "dist",
-  "index.html"
-);
+app.get("/api/restos", foodHandlers.getResto);
+app.get("/api/restos/:id", foodHandlers.getRestoById);
 
-if (fs.existsSync(reactIndexFile)) {
-  app.get("*", (req, res) => {
-    res.sendFile(reactIndexFile);
-  });
-}
+app.post("/api/restos", foodHandlers.postResto);
+
+app.put("/api/restos/:id", foodHandlers.updateResto);
+
+app.delete("/api/restos/:id", foodHandlers.deleteResto);
 
 // ready to export
 module.exports = app;

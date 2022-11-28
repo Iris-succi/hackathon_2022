@@ -1,0 +1,15 @@
+.loaderText {
+  display: flex;
+  justify-content: center;
+  color: #c40000;
+}
+
+@media screen and (max-width: 600px) {
+  .animation {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+}
